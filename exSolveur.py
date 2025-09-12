@@ -24,7 +24,9 @@ def uneSolution(f):
 if __name__=='__main__':
     print("\nExemple 1")
     clauses = [(1, 2), (-1, 2, -3), (1, -2, -3), (-1, -2, 3), (-1, -2, -3)]
-    
+    #clauses_a = [(1), (2, -1, -3), (2, 3, 4), (-2, -1, -3), (-1, 3, -4), (-1, 3, -4), (-3, 4)]
+    #clauses_b = 
+
     formule1 = CNF(from_clauses=clauses)
     print('\n-- la formule\n%s\n' %formule1.to_dimacs())
 
