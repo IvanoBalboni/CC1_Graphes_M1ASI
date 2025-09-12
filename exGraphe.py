@@ -36,7 +36,12 @@ def exemplesInstancesPositives(n):
 
     return Galea, Halea
 
-
+def verifISG(G, H, phi):
+    for sommet1 in H.edges:
+        #TODO: trucs
+        print(sommet1)
+        #for sommet2 in H[sommet1]:
+        #phi[sommet1] phi[somet2]
 
     
 if __name__=='__main__':
