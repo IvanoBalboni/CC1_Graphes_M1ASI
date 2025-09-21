@@ -1,4 +1,5 @@
-import networkx as nx                                                   
+import networkx as nx     
+import exSolveur as solve                                         
 
 class Reduction(object):
     def __init__(self,grG,grH):
@@ -6,10 +7,15 @@ class Reduction(object):
         self.h = grH
         self.n = grG.number_of_nodes()
         self.k = grH.number_of_nodes()
-        self.toutes_les_clauses = self.clauses_a() + self.clauses_b() # + self.clauses_c() + self.clauses_d()
+        self.toutes_les_clauses = self.clauses_a() + self.clauses_b() + self.clauses_c() + self.clauses_d()
 
     def code(self,i,j): # p(0,0) -> 1 ...
         return i*self.k+j+1
+    
+    def decode(self, ij):
+        #TODO: decode
+        return (0, 0)
+
  
     def clauses_a(self):  # au moins un 'vrai' sur chaque colonne
         return [[self.code(i,j) for i in range(self.n)] for j in range(self.k)]
@@ -21,6 +27,42 @@ class Reduction(object):
                 for b in range(1+a,self.n):            
                     clauses.append([-self.code(a,j),-self.code(b,j)])
         return clauses
+    
+    def clauses_c(self):
+        clauses = []
+        for s in range(self.n):
+            for a in range(self.k-1):
+                for b in range(a+1, self.k):
+                    clauses.append([-self.code(s, a),-self.code(s, b)])
+        return clauses
+
+    def clauses_d(self):
+        clauses = []
+        #print(nx.complement(self.g).edges)
+        #print(self.g.edges)
+        for (z,t) in self.h.edges:
+            for (x, y) in nx.complement(self.g).edges:
+                clauses.append([-self.code(x,z),-self.code(y,t)])
+                clauses.append([-self.code(x,t),-self.code(y,z)])
+        #print(len(clauses))
+        return clauses
+
+    
+def reduction(G, H):
+    red = Reduction(G, H)
+    return red.toutes_les_clauses
+
+
+def solveurISG(G, H):
+    red = Reduction(G, H)
+    sol = solve.solution(red)
+    if sol:
+        phi = []
+        for ij in sol:
+            if ij >= -1:
+                phi.append(red.decode(ij))
+        return phi
+    return None
 
 
 
@@ -33,5 +75,8 @@ if __name__=='__main__':
     c = Reduction(G3,H3)
    
     print("%s\n" %c.toutes_les_clauses)
+    print(reduction(G3, H3))
+    print(solveurISG(G3, H3))
+    print(len(c.toutes_les_clauses))
  
  

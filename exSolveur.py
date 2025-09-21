@@ -19,6 +19,13 @@ def uneSolution(f):
     else:
         print("la formule n'est pas satisfaisable")
 
+def solution(f):
+    solveur = Solver(bootstrap_with=f)
+    if solveur.solve():
+        return solveur.get_model()
+    else:
+        return []
+
 
 
 if __name__=='__main__':
