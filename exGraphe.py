@@ -38,6 +38,12 @@ def exemplesInstancesPositives(n):
     return Galea, Halea
 
 def verifISG(G, H, phi):
+    """
+    print("G ",G.nodes)
+    print("H ",H.nodes)
+    print("phi ", phi)
+    """
+    
     for (x, y) in H.edges:
         #print(x, y)
         if not G.has_edge(phi[x], phi[y]):
@@ -48,7 +54,7 @@ def verifISG(G, H, phi):
 
 def forceBruteISG(G, H):
     HLen = len(H.nodes)
-    phi_list = iter.permutations(range(len(G.nodes)), HLen)
+    phi_list = list(iter.permutations(range(len(G.nodes)), HLen))
     i = 0
     for phi in phi_list:
         if verifISG(G, H, phi):
@@ -59,17 +65,20 @@ def forceBruteISG(G, H):
 
     
 if __name__=='__main__':
+    """
     Gex = nx.Graph([(0,2),(1,2),(1,3),(1,4),(1,5),(2,3),(2,6),(2,7),(3,4),(4,5),(4,6),(5,7),(6,7)])
     Hex = nx.Graph([(0,1),(0,2),(0,3),(1,5),(2,3),(3,4),(4,5)])
-
-    phi = [1,2,3,4,5,7]
+    """
+    #phi = [1,2,3,4,5,7]
 
     G3 = nx.Graph([(0,1),(1,2),(1,3),(2,3)])
     H3 = nx.Graph([(0,1), (0,2) ,(1,2)])
-    affiche_info(Gex)
-    print( verifISG(G3, H3, [1,2,0]) )
-    print(forceBruteISG(Gex, Hex))
-    print(verifISG(Gex, Hex, phi))
+    #affiche_info(Gex)
+    
+    #print( verifISG(G3, H3, [1,2,0]) )
+    #print(forceBruteISG(Gex, Hex))
+    #print(verifISG(Gex, Hex, phi))
+    
     # fig = plt.figure(figsize=(20,10))
     # plt.subplot(121)
     # nx.draw(Gex, with_labels=True)
@@ -77,4 +86,49 @@ if __name__=='__main__':
     # nx.draw(Hex, with_labels=True)
     # plt.show()
 
-    Galea, Halea = exemplesInstancesPositives(14)
+    
+
+
+
+    ### Question 5 ###
+    ''' renvoi true '''
+    Gex = nx.Graph([(0,2),(1,2),(1,3),(1,4),(1,5),(2,3),(2,6),(2,7),(3,4),(4,5),(4,6),(5,7),(6,7)])
+    Hex = nx.Graph([(0,1),(0,2),(0,3),(1,5),(2,3),(3,4),(4,5)])
+    
+    ''' renvoi true '''
+    G1 = nx.Graph([(0,1),(0,3),(1,2),(1,3),(1,4),(2,3),(2,4),(3,4),(4,5)])
+    H1 = nx.Graph([(0,1),(0,2),(0,3),(1,2),(1,3),(2,3)])
+
+    ''' renvoi false '''
+    G2 = nx.Graph([(0,1),(1,2),(2,3),(3,4),(4,5),(5,0)])
+    H2 = nx.Graph([(0,1),(1,2),(2,3),(0,3),(0,2)])
+    
+    
+    #print(forceBruteISG(Gex, Hex))
+    #print(forceBruteISG(G1, H1))
+    #print(forceBruteISG(G2, H2))
+
+    """
+    for i in range(5, 15, 2):
+
+        Galea, Halea = exemplesInstancesPositives(i)
+        res = forceBruteISG(Galea, Halea)
+        print(res)
+
+        print(Galea)
+        print(Halea)
+
+        if res == False:
+            print("false")
+            
+        
+    print("tout est bon")
+    
+    
+
+    Galea, Halea = exemplesInstancesPositives(5)
+    res = forceBruteISG(Galea, Halea)
+    print(res)
+
+    """
+    
