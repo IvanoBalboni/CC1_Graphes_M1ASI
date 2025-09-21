@@ -3,6 +3,11 @@ from networkx.utils import py_random_state
 import random
 import matplotlib.pyplot as plt
 import itertools as iter
+import cProfile
+import pstats
+
+
+
 
 def affiche_info(graph):
     print('Noeuds : %s\nAretes : %s' %(graph.nodes,graph.edges))    
@@ -17,6 +22,7 @@ def exemplesInstancesPositives(n):
     prob = .5
     
     Galea = nx.gnp_random_graph(n, prob)
+    print(nx.is_connected(Galea))
 
     phi = []
     cible = list(range(n))
@@ -35,7 +41,7 @@ def exemplesInstancesPositives(n):
         Halea = nx.Graph(edges)
         flag = not nx.is_connected(Halea)
 
-    return Galea, Halea
+    return Galea, Halea 
 
 def verifISG(G, H, phi):
     """
@@ -46,6 +52,12 @@ def verifISG(G, H, phi):
     
     for (x, y) in H.edges:
         #print(x, y)
+        if x >= len(phi) or  y >= len(phi):
+            print("G ",G.nodes)
+            print("H ",H.nodes)
+            print("phi ", phi)
+            print("x : ", x, "  y : ", y)
+
         if not G.has_edge(phi[x], phi[y]):
             return False
         #for sommet2 in H[sommet1]:
@@ -61,6 +73,25 @@ def forceBruteISG(G, H):
             print(phi)
             return True
     return False
+
+
+def testQues5():
+    res = False
+    Galea1, Halea1 = exemplesInstancesPositives(4)
+    #res = forceBruteISG(Galea1, Halea1)
+    if res:
+        print("test aléatoire avec un graph de taille 4 passer")
+    
+    Galea2, Halea2 = exemplesInstancesPositives(7)
+    res = forceBruteISG(Galea2, Halea2)
+    if res:
+        print("test aléatoire avec un graph de taille 7 passer")
+
+    Galea3, Halea3 = exemplesInstancesPositives(11)
+    #res = forceBruteISG(Galea3, Halea3)
+    if res:
+        print("test aléatoire avec un graph de taille 11 passer")
+
 
 
     
@@ -124,11 +155,10 @@ if __name__=='__main__':
         
     print("tout est bon")
     
-    
-
-    Galea, Halea = exemplesInstancesPositives(5)
-    res = forceBruteISG(Galea, Halea)
-    print(res)
-
     """
+
+    
+    testQues5()
+
+    
     
