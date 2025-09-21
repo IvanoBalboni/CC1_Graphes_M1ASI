@@ -2,6 +2,7 @@ import networkx as nx
 from networkx.utils import py_random_state
 import random
 import matplotlib.pyplot as plt
+import itertools as iter
 
 def affiche_info(graph):
     print('Noeuds : %s\nAretes : %s' %(graph.nodes,graph.edges))    
@@ -37,17 +38,38 @@ def exemplesInstancesPositives(n):
     return Galea, Halea
 
 def verifISG(G, H, phi):
-    for sommet1 in H.edges:
-        #TODO: trucs
-        print(sommet1)
+    for (x, y) in H.edges:
+        #print(x, y)
+        if not G.has_edge(phi[x], phi[y]):
+            return False
         #for sommet2 in H[sommet1]:
         #phi[sommet1] phi[somet2]
+    return True
+
+def forceBruteISG(G, H):
+    HLen = len(H.nodes)
+    phi_list = iter.permutations(range(len(G.nodes)), HLen)
+    i = 0
+    for phi in phi_list:
+        if verifISG(G, H, phi):
+            print(phi)
+            return True
+    return False
+
 
     
 if __name__=='__main__':
     Gex = nx.Graph([(0,2),(1,2),(1,3),(1,4),(1,5),(2,3),(2,6),(2,7),(3,4),(4,5),(4,6),(5,7),(6,7)])
     Hex = nx.Graph([(0,1),(0,2),(0,3),(1,5),(2,3),(3,4),(4,5)])
+
+    phi = [1,2,3,4,5,7]
+
+    G3 = nx.Graph([(0,1),(1,2),(1,3),(2,3)])
+    H3 = nx.Graph([(0,1), (0,2) ,(1,2)])
     affiche_info(Gex)
+    print( verifISG(G3, H3, [1,2,0]) )
+    print(forceBruteISG(Gex, Hex))
+    print(verifISG(Gex, Hex, phi))
     # fig = plt.figure(figsize=(20,10))
     # plt.subplot(121)
     # nx.draw(Gex, with_labels=True)
