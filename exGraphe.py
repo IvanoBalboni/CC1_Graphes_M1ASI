@@ -63,6 +63,25 @@ def forceBruteISG(G, H):
     return False
 
 
+def testQues5():
+
+    Galea1, Halea1 = exemplesInstancesPositives(4)
+    res = forceBruteISG(Galea1, Halea1)
+    if res == True:
+        print("test aléatoire avec un graph de taille 4 passer")
+    
+    Galea2, Halea2 = exemplesInstancesPositives(7)
+    #res = forceBruteISG(Galea2, Halea2)
+    if res == True:
+        print("test aléatoire avec un graph de taille 7 passer")
+
+    Galea3, Halea3 = exemplesInstancesPositives(11)
+    #res = forceBruteISG(Galea3, Halea3)
+    if res == True:
+        print("test aléatoire avec un graph de taille 11 passer")
+
+        
+
     
 if __name__=='__main__':
     """
@@ -124,11 +143,10 @@ if __name__=='__main__':
         
     print("tout est bon")
     
-    
-
-    Galea, Halea = exemplesInstancesPositives(5)
-    res = forceBruteISG(Galea, Halea)
-    print(res)
-
     """
+
+    
+    testQues5()
+
+    
     
