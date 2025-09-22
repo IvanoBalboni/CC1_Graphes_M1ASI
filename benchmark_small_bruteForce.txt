@@ -1,0 +1,26 @@
+         202859 function calls (202845 primitive calls) in 0.496 seconds
+
+   Ordered by: cumulative time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        7    0.344    0.049    0.495    0.071 /home/bob/Documents/CC1_Graphes_M1ASI/exGraphe.py:79(forceBruteISG)
+    26547    0.093    0.000    0.151    0.000 /home/bob/Documents/CC1_Graphes_M1ASI/exGraphe.py:50(verifISG)
+    61514    0.034    0.000    0.036    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/classes/reportviews.py:1274(__iter__)
+    26547    0.008    0.000    0.011    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/classes/reportviews.py:187(__iter__)
+    34967    0.010    0.000    0.010    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/classes/graph.py:1292(has_edge)
+    26547    0.003    0.000    0.003    0.000 {built-in method builtins.iter}
+    26547    0.003    0.000    0.003    0.000 {method 'items' of 'dict' objects}
+       21    0.000    0.000    0.000    0.000 /usr/lib/python3.11/functools.py:981(__get__)
+        7    0.000    0.000    0.000    0.000 {built-in method builtins.print}
+       14    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/classes/graph.py:745(nodes)
+        7    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/classes/graph.py:1376(edges)
+        7    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/classes/reportviews.py:1067(__init__)
+    28/14    0.000    0.000    0.000    0.000 {built-in method builtins.len}
+       14    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/classes/reportviews.py:180(__init__)
+       14    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/classes/reportviews.py:184(__len__)
+       42    0.000    0.000    0.000    0.000 {method 'get' of 'dict' objects}
+       21    0.000    0.000    0.000    0.000 {method '__exit__' of '_thread.RLock' objects}
+        7    0.000    0.000    0.000    0.000 {built-in method builtins.hasattr}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+
+

@@ -13,8 +13,10 @@ class Reduction(object):
         return i*self.k+j+1
     
     def decode(self, ij):
-        #TODO: decode
-        return (0, 0)
+        ij -= 1
+        i = ij // self.k
+        j = ij % self.k
+        return (i, j)
 
  
     def clauses_a(self):  # au moins un 'vrai' sur chaque colonne
@@ -54,13 +56,19 @@ def reduction(G, H):
 
 
 def solveurISG(G, H):
+    '''
+    reduit G,H en probleme CLAUSE-SAT puis appelle un aolveur CLAUSE-SAT
+    renvoie phi si une solution est trouvee
+    [] sinon
+    '''
     red = Reduction(G, H)
-    sol = solve.solution(red)
+    sol = solve.solution(red.toutes_les_clauses)
     if sol:
         phi = []
         for ij in sol:
-            if ij >= -1:
-                phi.append(red.decode(ij))
+            if ij > -1:
+                i,dump = red.decode(ij)
+                phi.append(i)
         return phi
     return None
 

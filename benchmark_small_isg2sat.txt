@@ -1,0 +1,119 @@
+         597887 function calls (597882 primitive calls) in 3.891 seconds
+
+   Ordered by: cumulative time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        9    0.000    0.000    3.891    0.432 /home/bob/Documents/CC1_Graphes_M1ASI/isg2sat.py:58(solveurISG)
+        9    0.000    0.000    3.539    0.393 /home/bob/Documents/CC1_Graphes_M1ASI/exSolveur.py:22(solution)
+        9    0.000    0.000    3.455    0.384 /home/bob/.local/lib/python3.11/site-packages/pysat/solvers.py:725(solve)
+        9    0.000    0.000    3.455    0.384 /home/bob/.local/lib/python3.11/site-packages/pysat/solvers.py:6697(solve)
+        9    3.455    0.384    3.455    0.384 {built-in method pysolvers.minisat22_solve}
+        9    0.001    0.000    0.350    0.039 /home/bob/Documents/CC1_Graphes_M1ASI/isg2sat.py:5(__init__)
+        9    0.106    0.012    0.319    0.035 /home/bob/Documents/CC1_Graphes_M1ASI/isg2sat.py:41(clauses_d)
+      164    0.000    0.000    0.164    0.001 <class 'networkx.utils.decorators.argmap'> compilation 26:1(argmap_complement_23)
+      164    0.000    0.000    0.164    0.001 /home/bob/.local/lib/python3.11/site-packages/networkx/utils/backends.py:525(_call_if_no_backends_installed)
+      164    0.001    0.000    0.164    0.001 /home/bob/.local/lib/python3.11/site-packages/networkx/algorithms/operators/unary.py:8(complement)
+      164    0.106    0.001    0.156    0.001 /home/bob/.local/lib/python3.11/site-packages/networkx/classes/graph.py:975(add_edges_from)
+        9    0.000    0.000    0.084    0.009 /home/bob/.local/lib/python3.11/site-packages/pysat/solvers.py:366(__init__)
+        9    0.000    0.000    0.084    0.009 /home/bob/.local/lib/python3.11/site-packages/pysat/solvers.py:395(new)
+        9    0.000    0.000    0.084    0.009 /home/bob/.local/lib/python3.11/site-packages/pysat/solvers.py:6620(__init__)
+        9    0.020    0.002    0.084    0.009 /home/bob/.local/lib/python3.11/site-packages/pysat/solvers.py:6658(new)
+    64743    0.034    0.000    0.063    0.000 /home/bob/.local/lib/python3.11/site-packages/pysat/solvers.py:6890(add_clause)
+   130373    0.039    0.000    0.039    0.000 /home/bob/Documents/CC1_Graphes_M1ASI/isg2sat.py:12(code)
+    46892    0.028    0.000    0.030    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/algorithms/operators/unary.py:39(<genexpr>)
+    64743    0.029    0.000    0.029    0.000 {built-in method pysolvers.minisat22_add_cl}
+        9    0.010    0.001    0.018    0.002 /home/bob/Documents/CC1_Graphes_M1ASI/isg2sat.py:25(clauses_b)
+    23701    0.014    0.000    0.014    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/classes/reportviews.py:1274(__iter__)
+        9    0.007    0.001    0.011    0.001 /home/bob/Documents/CC1_Graphes_M1ASI/isg2sat.py:33(clauses_c)
+    97260    0.011    0.000    0.011    0.000 {method 'update' of 'dict' objects}
+    64747    0.006    0.000    0.006    0.000 {method 'append' of 'list' objects}
+      164    0.005    0.000    0.006    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/classes/graph.py:573(add_nodes_from)
+    47060    0.005    0.000    0.005    0.000 {method 'get' of 'dict' objects}
+    46746    0.005    0.000    0.005    0.000 {built-in method builtins.len}
+     3802    0.001    0.000    0.002    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/classes/graph.py:444(__iter__)
+        9    0.000    0.000    0.001    0.000 /home/bob/.local/lib/python3.11/site-packages/pysat/solvers.py:374(__del__)
+        9    0.000    0.000    0.001    0.000 /home/bob/.local/lib/python3.11/site-packages/pysat/solvers.py:451(delete)
+       18    0.000    0.000    0.001    0.000 /home/bob/.local/lib/python3.11/site-packages/pysat/solvers.py:6688(delete)
+        9    0.001    0.000    0.001    0.000 {built-in method pysolvers.minisat22_del}
+      165    0.001    0.000    0.001    0.000 /usr/lib/python3.11/functools.py:981(__get__)
+      164    0.001    0.000    0.001    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/classes/graph.py:339(__init__)
+        9    0.000    0.000    0.001    0.000 /home/bob/Documents/CC1_Graphes_M1ASI/isg2sat.py:22(clauses_a)
+        1    0.000    0.000    0.001    0.001 /home/bob/.local/lib/python3.11/site-packages/networkx/utils/decorators.py:783(func)
+       64    0.000    0.000    0.001    0.000 /home/bob/Documents/CC1_Graphes_M1ASI/isg2sat.py:23(<listcomp>)
+     3966    0.001    0.000    0.001    0.000 {built-in method builtins.iter}
+      165    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/classes/graph.py:1376(edges)
+        1    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/utils/decorators.py:715(_lazy_compile)
+        1    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/utils/decorators.py:869(compile)
+        1    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/utils/decorators.py:917(assemble)
+      328    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/utils/misc.py:593(_clear_cache)
+        1    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/utils/decorators.py:1059(signature)
+      165    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/classes/reportviews.py:1067(__init__)
+      164    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/classes/graph.py:38(__set__)
+      2/1    0.000    0.000    0.000    0.000 /usr/lib/python3.11/inspect.py:3278(signature)
+      2/1    0.000    0.000    0.000    0.000 /usr/lib/python3.11/inspect.py:3024(from_callable)
+      2/1    0.000    0.000    0.000    0.000 /usr/lib/python3.11/inspect.py:2428(_signature_from_callable)
+        9    0.000    0.000    0.000    0.000 {built-in method builtins.print}
+        1    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/utils/backends.py:487(__signature__)
+      164    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/classes/graph.py:1479(adjacency)
+      164    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/classes/graph.py:63(__set__)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3.11/inspect.py:2333(_signature_from_function)
+        8    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/pysat/solvers.py:1098(get_model)
+      331    0.000    0.000    0.000    0.000 {built-in method builtins.getattr}
+        8    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/pysat/solvers.py:6807(get_model)
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.compile}
+        9    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/pysat/_utils.py:47(check)
+        8    0.000    0.000    0.000    0.000 {built-in method pysolvers.minisat22_model}
+      337    0.000    0.000    0.000    0.000 {method 'items' of 'dict' objects}
+      165    0.000    0.000    0.000    0.000 {method '__exit__' of '_thread.RLock' objects}
+        3    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/utils/decorators.py:849(_name)
+       60    0.000    0.000    0.000    0.000 /home/bob/Documents/CC1_Graphes_M1ASI/isg2sat.py:15(decode)
+        9    0.000    0.000    0.000    0.000 {built-in method pysolvers.minisat22_new}
+      170    0.000    0.000    0.000    0.000 {built-in method builtins.hasattr}
+        3    0.000    0.000    0.000    0.000 /usr/lib/python3.11/inspect.py:2686(__init__)
+        3    0.000    0.000    0.000    0.000 /usr/lib/python3.11/re/__init__.py:178(sub)
+        3    0.000    0.000    0.000    0.000 {method 'join' of 'str' objects}
+        9    0.000    0.000    0.000    0.000 /usr/lib/python3.11/threading.py:1453(current_thread)
+       18    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/classes/graph.py:838(number_of_nodes)
+        2    0.000    0.000    0.000    0.000 /usr/lib/python3.11/inspect.py:2972(__init__)
+        4    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/utils/decorators.py:1195(_indent)
+        3    0.000    0.000    0.000    0.000 /usr/lib/python3.11/re/__init__.py:272(_compile)
+        3    0.000    0.000    0.000    0.000 /usr/lib/python3.11/enum.py:686(__call__)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3.11/inspect.py:735(unwrap)
+      6/4    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/utils/decorators.py:1165(_flatten)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3.11/inspect.py:3040(replace)
+        1    0.000    0.000    0.000    0.000 <string>:1(<lambda>)
+        9    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/pysat/solvers.py:6637(__del__)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3.11/inspect.py:167(get_annotations)
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.any}
+       23    0.000    0.000    0.000    0.000 {built-in method builtins.isinstance}
+        3    0.000    0.000    0.000    0.000 {method 'sub' of 're.Pattern' objects}
+        4    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/utils/decorators.py:826(_count)
+        9    0.000    0.000    0.000    0.000 {built-in method _thread.get_ident}
+        9    0.000    0.000    0.000    0.000 /usr/lib/python3.11/threading.py:1597(main_thread)
+        2    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/utils/backends.py:496(<genexpr>)
+        9    0.000    0.000    0.000    0.000 {method 'lower' of 'str' objects}
+        2    0.000    0.000    0.000    0.000 /usr/lib/python3.11/inspect.py:3019(<genexpr>)
+        2    0.000    0.000    0.000    0.000 /usr/lib/python3.11/inspect.py:378(isfunction)
+       12    0.000    0.000    0.000    0.000 /usr/lib/python3.11/inspect.py:2739(name)
+        1    0.000    0.000    0.000    0.000 {method 'extend' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.exec}
+        8    0.000    0.000    0.000    0.000 {built-in method builtins.id}
+        3    0.000    0.000    0.000    0.000 /usr/lib/python3.11/enum.py:1093(__new__)
+        7    0.000    0.000    0.000    0.000 /usr/lib/python3.11/inspect.py:2751(kind)
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        3    0.000    0.000    0.000    0.000 {method 'values' of 'mappingproxy' objects}
+        3    0.000    0.000    0.000    0.000 {method 'isidentifier' of 'str' objects}
+        3    0.000    0.000    0.000    0.000 {method '__contains__' of 'frozenset' objects}
+        1    0.000    0.000    0.000    0.000 {method 'format' of 'str' objects}
+        3    0.000    0.000    0.000    0.000 /usr/lib/python3.11/inspect.py:3032(parameters)
+        1    0.000    0.000    0.000    0.000 {built-in method sys.getrecursionlimit}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3.11/inspect.py:755(_is_wrapper)
+        1    0.000    0.000    0.000    0.000 {built-in method __new__ of type object at 0x9444a0}
+        3    0.000    0.000    0.000    0.000 {built-in method builtins.callable}
+        2    0.000    0.000    0.000    0.000 {method 'add' of 'set' objects}
+        1    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/utils/decorators.py:1053(<genexpr>)
+        1    0.000    0.000    0.000    0.000 {method 'values' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 <class 'networkx.utils.decorators.argmap'> compilation 26:1(<module>)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python3.11/inspect.py:2743(default)
+
+

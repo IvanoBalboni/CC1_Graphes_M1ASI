@@ -1,0 +1,132 @@
+         1456527 function calls (1456491 primitive calls) in 5.400 seconds
+
+   Ordered by: call count
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+495190/495178    0.052    0.000    0.052    0.000 {built-in method builtins.len}
+   402526    0.236    0.000    0.254    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/classes/reportviews.py:1274(__iter__)
+   247557    0.078    0.000    0.078    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/classes/graph.py:1292(has_edge)
+   154969    0.018    0.000    0.018    0.000 {method 'items' of 'dict' objects}
+   154969    0.391    0.000    0.775    0.000 /home/bob/Documents/CC1_Graphes_M1ASI/exGraphe.py:48(verifISG)
+      106    0.000    0.000    0.000    0.000 {method 'update' of 'dict' objects}
+       92    0.000    0.000    0.000    0.000 {method 'get' of 'dict' objects}
+       87    0.000    0.000    0.000    0.000 {method 'random' of '_random.Random' objects}
+       83    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}
+       74    0.000    0.000    0.000    0.000 {built-in method builtins.isinstance}
+       61    0.000    0.000    0.000    0.000 {built-in method builtins.getattr}
+       55    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/utils/misc.py:593(_clear_cache)
+       47    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/classes/graph.py:906(add_edge)
+       44    0.000    0.000    0.000    0.000 /usr/lib/python3.11/inspect.py:2739(name)
+       35    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/algorithms/components/connected.py:157(<genexpr>)
+       34    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/classes/reportviews.py:1283(__contains__)
+       33    0.000    0.000    0.000    0.000 {method 'add' of 'set' objects}
+       26    0.000    0.000    0.000    0.000 /usr/lib/python3.11/inspect.py:2751(kind)
+       22    0.000    0.000    0.000    0.000 {built-in method builtins.hasattr}
+       20    0.000    0.000    0.000    0.000 {built-in method builtins.id}
+       16    0.000    0.000    0.000    0.000 {method 'getrandbits' of '_random.Random' objects}
+    16/10    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/utils/decorators.py:1165(_flatten)
+       12    0.000    0.000    0.000    0.000 {method 'remove' of 'list' objects}
+       12    0.000    0.000    0.000    0.000 {method 'bit_length' of 'int' objects}
+     12/8    0.000    0.000    0.001    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/utils/backends.py:525(_call_if_no_backends_installed)
+       12    0.000    0.000    0.000    0.000 /usr/lib/python3.11/random.py:235(_randbelow_with_getrandbits)
+       12    0.000    0.000    0.000    0.000 /usr/lib/python3.11/random.py:367(choice)
+       10    0.000    0.000    0.000    0.000 {method '__contains__' of 'frozenset' objects}
+       10    0.000    0.000    0.000    0.000 {method 'isidentifier' of 'str' objects}
+       10    0.000    0.000    0.000    0.000 {method '__exit__' of '_thread.RLock' objects}
+       10    0.000    0.000    0.000    0.000 /usr/lib/python3.11/functools.py:981(__get__)
+       10    0.000    0.000    0.000    0.000 /usr/lib/python3.11/inspect.py:2686(__init__)
+       10    0.000    0.000    0.000    0.000 /usr/lib/python3.11/enum.py:1093(__new__)
+       10    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/utils/decorators.py:826(_count)
+       10    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/utils/decorators.py:1195(_indent)
+       10    0.000    0.000    0.000    0.000 /usr/lib/python3.11/enum.py:686(__call__)
+      8/4    0.000    0.000    0.000    0.000 {built-in method builtins.iter}
+        8    0.000    0.000    0.000    0.000 {method 'sub' of 're.Pattern' objects}
+        8    0.000    0.000    0.000    0.000 /usr/lib/python3.11/re/__init__.py:272(_compile)
+        8    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/classes/graph.py:476(__len__)
+        8    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/utils/backends.py:496(<genexpr>)
+        8    0.000    0.000    0.000    0.000 /usr/lib/python3.11/inspect.py:3019(<genexpr>)
+        8    0.000    0.000    0.000    0.000 /usr/lib/python3.11/re/__init__.py:178(sub)
+        8    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/utils/decorators.py:849(_name)
+        6    0.000    0.000    0.000    0.000 {method 'clear' of 'dict' objects}
+        6    0.000    0.000    0.000    0.000 {method 'values' of 'mappingproxy' objects}
+        6    0.000    0.000    0.000    0.000 {method 'join' of 'str' objects}
+        6    0.000    0.000    0.000    0.000 {built-in method builtins.callable}
+        6    0.000    0.000    0.000    0.000 {built-in method builtins.print}
+        6    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/classes/graph.py:1577(is_directed)
+        6    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/utils/decorators.py:1053(<genexpr>)
+        6    0.000    0.000    0.000    0.000 /usr/lib/python3.11/inspect.py:3032(parameters)
+        5    0.000    0.000    0.000    0.000 /usr/lib/python3.11/inspect.py:2743(default)
+        4    0.000    0.000    0.000    0.000 {method 'extend' of 'list' objects}
+        4    0.000    0.000    0.000    0.000 {built-in method builtins.next}
+        4    0.000    0.000    0.000    0.000 {built-in method builtins.sum}
+        4    0.000    0.000    0.000    0.000 <frozen abc>:117(__instancecheck__)
+        4    0.000    0.000    0.000    0.000 {built-in method _abc._abc_instancecheck}
+        4    0.000    0.000    0.000    0.000 /usr/lib/python3.11/inspect.py:2972(__init__)
+      4/2    0.000    0.000    0.000    0.000 /usr/lib/python3.11/inspect.py:2428(_signature_from_callable)
+      4/2    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/utils/decorators.py:917(assemble)
+        4    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/classes/graph.py:573(add_nodes_from)
+        4    0.000    0.000    0.000    0.000 <class 'networkx.utils.decorators.argmap'> compilation 12:1(argmap_empty_graph_9)
+        4    0.000    0.000    0.000    0.000 <class 'networkx.utils.decorators.argmap'> compilation 22:1(argmap_is_connected_18)
+        4    0.000    0.000    0.000    0.000 <class 'networkx.utils.decorators.argmap'> compilation 8:1(argmap_empty_graph_5)
+        4    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/algorithms/components/connected.py:113(is_connected)
+        4    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/algorithms/components/connected.py:201(_plain_bfs)
+        4    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/classes/graph.py:745(nodes)
+        4    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/classes/graph.py:1376(edges)
+        4    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/classes/reportviews.py:180(__init__)
+        4    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/classes/graph.py:339(__init__)
+        4    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/generators/classic.py:566(empty_graph)
+        4    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/classes/reportviews.py:1067(__init__)
+        4    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/classes/graph.py:444(__iter__)
+        4    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/classes/reportviews.py:184(__len__)
+        4    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/classes/graph.py:63(__set__)
+        4    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/classes/graph.py:38(__set__)
+        4    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/utils/decorators.py:83(_not_implemented_for)
+        4    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/utils/decorators.py:246(_nodes_or_number)
+      4/2    0.000    0.000    0.000    0.000 /usr/lib/python3.11/inspect.py:3278(signature)
+      4/2    0.000    0.000    0.000    0.000 /usr/lib/python3.11/inspect.py:3024(from_callable)
+        4    0.000    0.000    0.000    0.000 /usr/lib/python3.11/inspect.py:378(isfunction)
+        4    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/utils/misc.py:144(arbitrary_element)
+        2    0.000    0.000    0.000    0.000 {method 'values' of 'dict' objects}
+        2    0.000    0.000    0.000    0.000 {method 'format' of 'str' objects}
+        2    0.000    0.000    0.000    0.000 {built-in method sys.getrecursionlimit}
+        2    0.000    0.000    0.000    0.000 {built-in method builtins.any}
+        2    0.000    0.000    0.000    0.000 {built-in method builtins.compile}
+        2    0.000    0.000    0.000    0.000 {built-in method builtins.exec}
+        2    0.000    0.000    0.000    0.000 <frozen _collections_abc>:78(_check_methods)
+      2/1    0.000    0.000    0.000    0.000 <frozen abc>:121(__subclasscheck__)
+        2    0.000    0.000    0.000    0.000 {built-in method __new__ of type object at 0x9444a0}
+      2/1    0.000    0.000    0.000    0.000 {built-in method _abc._abc_subclasscheck}
+        2    0.000    0.000    0.001    0.001 /home/bob/Documents/CC1_Graphes_M1ASI/exGraphe.py:20(exemplesInstancesPositives)
+        2    0.000    0.000    0.000    0.000 /usr/lib/python3.11/inspect.py:167(get_annotations)
+        2    0.000    0.000    0.000    0.000 /usr/lib/python3.11/inspect.py:2333(_signature_from_function)
+        2    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/utils/misc.py:423(create_py_random_state)
+        2    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/utils/misc.py:602(check_create_using)
+        2    0.000    0.000    0.001    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/utils/decorators.py:869(compile)
+        2    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/utils/decorators.py:1008(get_name)
+        2    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/utils/decorators.py:1059(signature)
+        2    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/utils/backends.py:487(__signature__)
+        2    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/classes/graph.py:975(add_edges_from)
+        2    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/convert.py:34(to_networkx_graph)
+        2    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/generators/random_graphs.py:121(gnp_random_graph)
+        2    0.000    0.000    0.000    0.000 <class 'networkx.utils.decorators.argmap'> compilation 17:1(argmap_gnp_random_graph_13)
+        2    0.000    0.000    0.000    0.000 <class 'networkx.utils.decorators.argmap'> compilation 4:1(argmap_from_edgelist_1)
+        2    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/classes/coreviews.py:44(__init__)
+        2    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/classes/graph.py:1537(clear)
+        2    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/classes/graph.py:382(adj)
+        2    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/classes/graph.py:1573(is_multigraph)
+        2    0.000    0.000    0.000    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/convert.py:478(from_edgelist)
+        2    0.000    0.000    0.001    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/utils/decorators.py:715(_lazy_compile)
+        2    0.000    0.000    0.000    0.000 <string>:1(<lambda>)
+        2    0.000    0.000    0.000    0.000 /usr/lib/python3.11/inspect.py:755(_is_wrapper)
+        2    0.000    0.000    0.001    0.000 /home/bob/.local/lib/python3.11/site-packages/networkx/utils/decorators.py:783(func)
+        2    0.000    0.000    0.000    0.000 /usr/lib/python3.11/inspect.py:735(unwrap)
+        2    3.674    1.837    4.449    2.225 /home/bob/Documents/CC1_Graphes_M1ASI/exGraphe.py:69(forceBruteISG)
+        2    0.000    0.000    0.000    0.000 /usr/lib/python3.11/inspect.py:3040(replace)
+        1    0.000    0.000    0.000    0.000 <frozen _collections_abc>:362(__subclasshook__)
+        1    0.000    0.000    0.000    0.000 <frozen _collections_abc>:283(__subclasshook__)
+        1    0.000    0.000    0.000    0.000 <class 'networkx.utils.decorators.argmap'> compilation 22:1(<module>)
+        1    0.000    0.000    0.000    0.000 <class 'networkx.utils.decorators.argmap'> compilation 17:1(<module>)
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        1    0.949    0.949    5.400    5.400 /home/bob/Documents/CC1_Graphes_M1ASI/exGraphe.py:80(testQues5)
+
+
